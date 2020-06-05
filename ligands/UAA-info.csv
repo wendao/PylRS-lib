@@ -1,0 +1,12 @@
+A-K: N[C@H](C(O)=O)CCCCNC(OCC1=CC=CC=C1[N+]([O-])=O)=O
+A-Y: N[C@H](C(O)=O)CC1=CC=C(OCC2=C([N+]([O-])=O)C=CC=C2)C=C1
+B-K: N[C@H](C(O)=O)CCCCNC(OCC1=CC2=C(OCO2)C=C1[N+]([O-])=O)=O
+B-Kax: N[C@H](C(O)=O)CCCCNC(O[C@H](C)C1=CC2=C(OCO2)C=C1[N+]([O-])=O)=O
+B-Kep: N[C@H](C(O)=O)CCCCNC(O[C@@H](C)C1=CC2=C(OCO2)C=C1[N+]([O-])=O)=O
+B-Y: N[C@H](C(O)=O)CC1=CC=C(OCC2=CC(OCO3)=C3C=C2[N+]([O-])=O)C=C1
+B-Yax: N[C@H](C(O)=O)CC1=CC=C(O[C@H](C)C2=CC(OCO3)=C3C=C2[N+]([O-])=O)C=C1
+B-Yep: N[C@H](C(O)=O)CC1=CC=C(O[C@@H](C)C2=CC(OCO3)=C3C=C2[N+]([O-])=O)C=C1
+C-Kax: N[C@H](C(O)=O)CCCCNC(O[C@H]1CCCCC/C=C/1)=O
+C-Kep: N[C@H](C(O)=O)CCCCNC(O[C@@H]1CCCCC/C=C/1)=O
+C-Yax: N[C@H](C(O)=O)CC1=CC=C(O[C@H]2CCCCC/C=C/2)C=C1
+C-Yep: N[C@H](C(O)=O)CC1=CC=C(O[C@@H]2CCCCC/C=C/2)C=C1
