@@ -17,3 +17,8 @@ pymol convert.pml
 
 #combine
 python ../fix_TCO.py 
+
+mkdir rotlib
+cd rotlib
+../../gen_pml_rot.sh > gen_rotamers.pml
+pymol gen_rotamers.pml
