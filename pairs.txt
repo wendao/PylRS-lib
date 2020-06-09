@@ -1,0 +1,16 @@
+A-K,5
+A-Y,7
+B-K,8
+B-K,9
+B-Kax,8
+B-Kax,9
+B-Kep,8
+B-Kep,9
+B-Y,2
+B-Y,12
+B-Yax,2
+B-Yax,12
+B-Yep,2
+B-Yep,12
+C-Kax,11
+C-Kep,11
