@@ -109,11 +109,11 @@ for l in lines:
     fp.close()
 
     #copy lig.pdb and params
-    shutil.copyfile("ligands/U"+uaa+"/LIG_0001.pdb", react_dir+"/LIG_0001.pdb")
-    shutil.copyfile("ligands/U"+uaa+"/LIG.params", react_dir+"/LIG.params")
-    shutil.copyfile("ligands/U"+uaa+"/LIG.tors", react_dir+"/LIG.tors")
-    shutil.copyfile("ligands/U"+uaa+"/rotlib.pdb", react_dir+"/rotlib.pdb")
-    atoms = open("/ligands/U"+uaa+"/key_atoms.txt", 'r').readlines()[0].split()
+    shutil.copyfile("ligands/U"+uaa+"/rotlib/LIG_0001.pdb", react_dir+"/LIG_0001.pdb")
+    shutil.copyfile("ligands/U"+uaa+"/rotlib/LIG.params", react_dir+"/LIG.params")
+    shutil.copyfile("ligands/U"+uaa+"/rotlib/LIG.tors", react_dir+"/LIG.tors")
+    shutil.copyfile("ligands/U"+uaa+"/rotlib/rotlib.pdb", react_dir+"/rotlib.pdb")
+    atoms = open("ligands/U"+uaa+"/rotlib/key_atoms.txt", 'r').readlines()[0].split()
     with open(react_dir+"/opt.cst", 'a') as f:
       f.write(cst1_tmpl.substitute(atm=atoms[0]))
       f.write(cst2_tmpl.substitute(atm=atoms[1]))
