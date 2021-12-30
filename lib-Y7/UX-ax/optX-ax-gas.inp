@@ -1,7 +1,7 @@
 ! wB97M-V def2-TZVP def2/J RIJCOSX strongSCF noautostart miniprint nopop
 %maxcore  1000
 %pal nprocs   4 end
-* xyz   0   2
+* xyz   -1   1
 C      9.85521279   43.41841588   33.86383376
 O     10.99108609   43.52169056   34.26900468
 O      9.12535928   42.30441910   33.78265414
