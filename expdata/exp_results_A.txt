@@ -30,3 +30,6 @@ G B1
 G C5
 G C7
 G C9
+H B1
+H E10
+H H4

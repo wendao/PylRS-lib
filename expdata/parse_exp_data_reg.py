@@ -11,14 +11,14 @@ cutoff = 2.5
 
 pn = {}
 for i in range(12):
-  pn[i+1]    = "I"+str(i+1) #= "A"+str(i+1) #
-  pn[i+1+12] = "J"+str(i+1) #= "B"+str(i+1) #
-  pn[i+1+24] = "K"+str(i+1) #= "C"+str(i+1) #
-  pn[i+1+36] = "L"+str(i+1) #= "D"+str(i+1) #
-  pn[i+1+48] = "M"+str(i+1) #= "E"+str(i+1) #
-  pn[i+1+60] = "N"+str(i+1) #= "F"+str(i+1) #
-  pn[i+1+72] = "P"+str(i+1) #= "G"+str(i+1) #
-  pn[i+1+84] = "Q"+str(i+1) #= "H"+str(i+1) #
+  pn[i+1]    = "A"+str(i+1) #= "I"+str(i+1) #
+  pn[i+1+12] = "B"+str(i+1) #= "J"+str(i+1) #
+  pn[i+1+24] = "C"+str(i+1) #= "K"+str(i+1) #
+  pn[i+1+36] = "D"+str(i+1) #= "L"+str(i+1) #
+  pn[i+1+48] = "E"+str(i+1) #= "M"+str(i+1) #
+  pn[i+1+60] = "F"+str(i+1) #= "N"+str(i+1) #
+  pn[i+1+72] = "G"+str(i+1) #= "P"+str(i+1) #
+  pn[i+1+84] = "H"+str(i+1) #= "Q"+str(i+1) #
 #print pn
 
 for i in range(N_lig):
@@ -43,18 +43,7 @@ for i in range(N_lig):
     neg.append(neg1[j+1])
     neg.append(neg2[j+1])
     neg.append(neg3[j+1])
-    pos_mean = np.mean(pos) - bg_mean
-    neg_mean = np.mean(neg) - bg_mean
-    pos_mean_2 = np.mean(pos)
-    neg_mean_2 = np.mean(neg)
-    fold1 = pos_mean / bg_mean
-    fold2 = pos_mean_2 / neg_mean_2
-
-    #print fold1, fold2
-
-    flag = 0
-    if fold1 >= cutoff:
-        flag = 1
-        print ligands[i], pn[j+1]
-    out_str += str(flag)
-  #print out_str
+    pos_mean = np.mean(pos)
+    neg_mean = np.mean(neg)
+    fold = pos_mean / ( neg_mean + bg_mean )
+    print ligands[i], pn[j+1], fold
