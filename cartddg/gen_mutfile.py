@@ -58,8 +58,8 @@ for l in lines:
     mut_seq = put_muts( WT, muts, -shift )
 
     #from newseq to B1
-    muts_R = get_muts( mut_seq, B1, -1 )
+    muts_R = get_muts( mut_seq, B1 )
     #from B1 to newseq
-    muts_F = get_muts( B1, mut_seq, -1 )
+    muts_F = get_muts( B1, mut_seq )
     write_mutfile( "mut_fwd/"+label, muts_F )
     write_mutfile( "mut_rev/"+label, muts_R )
