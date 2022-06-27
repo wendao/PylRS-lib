@@ -9,6 +9,7 @@ done
 for i in X-ax X-ep
 do
   tail -n +2 ssm/U${i}_ddg_terms.txt > ssm_U${i}.dat
-  python normalization_zscore.py ref_U${i}.dat ssm_U${i}.dat > ssm_U${i}_ddg_terms.txt
+  #python normalization_zscore.py ref_U${i}.dat ssm_U${i}.dat > ssm_U${i}_ddg_terms.txt
+  python normalization_zscore.py tmp_U${i}.dat ssm_U${i}.dat > ssm_U${i}_ddg_terms.txt
 done
 
